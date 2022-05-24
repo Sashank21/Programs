@@ -1,0 +1,28 @@
+Auction Winner
+
+There are 'n' bidders for a painting in a bid. The one with the highest bid wins.
+If there are no winners print '-1' else print the contender number.
+
+I/p: n - number of bidders followed by n bidding values
+
+case1:
+i/p		o/p		Desc
+3		1		first contender wins	
+5
+3
+3
+
+case2:
+i/p		o/p		Desc
+4		-1		As all contenders have same bidding value, no one wins	
+5
+5
+5
+5
+
+case3:
+i/p		o/p		Desc
+3		3		In this case 3rd contender wins	
+2
+5
+7
