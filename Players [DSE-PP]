@@ -1,0 +1,18 @@
+PLAYERS
+
+It is a two player game where there will be a list of numbers given.
+Each player removes a number in each turn and a number will be left out at last.
+And Player1 always tries to keep the last number as least number, Player2 always
+tries to keep the last number as highest number.
+
+I/P: n - count of numbers follewed by n numbers
+
+Case1:
+i/p			o/p		Desc
+5			3		p1 removes 5, p2 removes 1	
+1 2 3 4 5			p1 removes 4, p2 removes 2
+
+Case2:
+i/p			o/p		Desc
+3			3		p1 removes 2, p2 removes 1	
+1 2 2				
