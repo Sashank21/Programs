@@ -1,0 +1,37 @@
+/******************************************************************************
+Arranging dates in a list in Ascending Order
+*******************************************************************************/
+dates=['04-1967','10-2012','06-2012','01-1989','12-2000']
+d=[]
+m=[]
+ans=[]
+n=len(dates)
+for x in dates:
+    d.append(int(x.split("-")[0]))
+    m.append(int(x.split("-")[1]))
+    
+for x in range(0,n):
+    for y in range(0,n):
+        if(m[x]<m[y]):
+            z=m[x]
+            m[x]=m[y]
+            m[y]=z
+            
+            z=d[x]
+            d[x]=d[y]
+            d[y]=z
+            
+for x in range(0,n-1):
+    if(m[x]==m[x+1]):
+        z=m[x]
+        m[x]=m[x+1]
+        m[x+1]=z
+            
+        z=d[x]
+        d[x]=d[x+1]
+        d[x+1]=z
+    ans.append(str(d[x])+"-"+str(m[x]))
+    
+ans.append(str(d[n-1])+"-"+str(m[n-1]))
+    
+print(ans)
