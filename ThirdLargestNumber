@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+
+		                      3rd largest number
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		//int arr[] = new int[5];
+		int arr[] = {-2,54,124,5,8};
+		int a=-9999,b=a,c=a,z=0;
+		for(int i=0;i<arr.length;i++){
+		    if(b>a){
+		        z=a;
+		        a=b;
+		        b=z;
+		    }
+		    if(c>b){
+		        z=c;
+		        c=b;
+		        b=z;
+		    }
+		    if(arr[i]>c){
+		        c=arr[i];
+		    }
+		}
+		System.out.println(a +" "+ b +" "+ c);
+	}
+}
