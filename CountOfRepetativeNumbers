@@ -1,0 +1,31 @@
+/******************************************************************************
+Given a list of repetative numbers, we need to print the repetative numbers
+along with their count respectively.
+
+If [3,5,10,10] is the list we need to print, 10 and 2
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		//[1,2,3,4,2,3,4,3,5]
+		int n=9,max=-9999;
+		int[] arr = {1,2,3,4,2,3,4,3,5};
+		for(int i=0;i<n;i++){
+		    if(max<arr[i]){
+		        max=arr[i]; 
+		    }
+		}
+		//max - 5
+		int[] count = new int[max+1]; 
+		for(int i=0;i<n;i++){
+		    count[arr[i]]++;
+		}
+		//count array - {0,1,2,3,2,1}
+		for(int i=0;i<max+1;i++){
+		    if(count[i]>1){
+		        System.out.println("Duplicates count of "+ i + "is" + count[i]);
+		    }
+		}
+	}
+}
